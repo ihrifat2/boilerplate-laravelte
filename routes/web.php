@@ -29,3 +29,4 @@ Route::get('/registration', function () {
 Route::get('/admin', function () {
     return Inertia::render('Backend/Dashboard');
 });
+require __DIR__.'/auth.php';
