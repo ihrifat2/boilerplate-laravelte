@@ -14,7 +14,7 @@ const path = require('path')
 
 mix
     .js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
+    .css('resources/css/app.css', 'public/css', [
     ])
     .webpackConfig({
         experiments: {
@@ -22,6 +22,7 @@ mix
         },
         output: { chunkFilename: 'js/[name].js?id=[chunkhash]' },
         resolve: {
+            extensions: [".*",".wasm",".mjs",".js",".jsx",".json"],
             mainFields: ['svelte', 'browser', 'module', 'main'],
             alias: {
                 '@': path.resolve('resources/js'),

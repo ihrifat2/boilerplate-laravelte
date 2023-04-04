@@ -12,6 +12,7 @@
     "dependencies": {
         "@inertiajs/inertia": "^0.11.1",
         "@inertiajs/inertia-svelte": "^0.8.0",
+        "@inertiajs/svelte": "^1.0.2",
         "laravel-mix": "^6.0.49",
         "svelte": "^3.58.0",
         "svelte-loader": "^3.1.7"

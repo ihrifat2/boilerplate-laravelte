@@ -18,6 +18,14 @@ Route::get('/', function () {
     return Inertia::render('Frontend/Welcome');
 });
 
+Route::get('/login', function () {
+    return Inertia::render('Auth/Signin');
+});
+
+Route::get('/registration', function () {
+    return Inertia::render('Auth/Signup');
+});
+
 Route::get('/admin', function () {
     return Inertia::render('Backend/Dashboard');
 });
