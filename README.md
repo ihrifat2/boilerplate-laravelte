@@ -1,6 +1,6 @@
-## Install the project by Docker
+## Install the Backend project by Docker
 
-First install docker then run this command
+First install & open docker then run this command
 
 ```
 docker run --rm \
@@ -21,20 +21,22 @@ docker run --rm \
     composer install --ignore-platform-reqs
 ```
 
-## Install NPM
+## Run this project 
 
 ```
-./vendor/bin/sail npm install
+./vendor/bin/sail up
 ```
 
-Other commands
+## Install the Frontend project by Docker
+
+First install & open docker then run this command
+
 ```
-./vendor/bin/sail npm run dev
-./vendor/bin/sail npx run
+docker build . -t trigyte-sveltekit
 ```
 
 ## Run this project 
 
 ```
-./vendor/bin/sail up
+docker run -d -p 3000:3000 trigyte-sveltekit
 ```
